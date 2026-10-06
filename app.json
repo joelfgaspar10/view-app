@@ -1,0 +1,56 @@
+{
+  "expo": {
+    "name": "View-App",
+    "slug": "View-App",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "src/assets/icon2.png",
+    "userInterfaceStyle": "light",
+    "backgroundColor": "#33415C",
+    "newArchEnabled": true,
+    "splash": {
+      "image": "src/assets/splash-icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "userInterfaceStyle": "automatic",
+      "googleServicesFile": "./GoogleService-Info.plist"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "src/assets/icon2.png",
+        "backgroundColor": "#ffffff"
+      },
+      "permissions": [
+        "RECEIVE_BOOT_COMPLETED"
+      ],
+      "softwareKeyboardLayoutMode": "resize",
+      "googleServicesFile": "./google-services.json",
+      "package": "com.project67.viewapp"
+    },
+    "web": {
+      "bundler": "metro",
+      "favicon": "src/assets/favicon.png"
+    },
+    "plugins": [
+      "expo-video",
+      [
+        "expo-notifications",
+        {
+          "icon": "./src/assets/icon2.png",
+          "color": "#2563EB"
+        }
+      ],
+      "expo-audio",
+      "expo-font",
+      "expo-asset"
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "cd680d0b-aafa-4560-92ce-b9473d7cd8dc"
+      }
+    }
+  }
+}
